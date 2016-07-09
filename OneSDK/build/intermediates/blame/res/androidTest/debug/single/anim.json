@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/build/intermediates/res/merged/androidTest/debug/anim/popup_window_out.xml",
+        "source": "/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/build/intermediates/bundles/debug/res/anim/popup_window_out.xml"
+    },
+    {
+        "merged": "/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/build/intermediates/res/merged/androidTest/debug/anim/popup_window_in.xml",
+        "source": "/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/build/intermediates/bundles/debug/res/anim/popup_window_in.xml"
+    }
+]

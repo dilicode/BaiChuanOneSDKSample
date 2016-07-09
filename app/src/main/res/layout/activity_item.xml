@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <!--  -->
+    <Button
+        android:id="@+id/show_item_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showItemDetail"
+        android:text="@string/show_item_detail" />
+
+    <Button
+        android:id="@+id/open_taoke_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openTaokeDetail"
+        android:text="@string/open_taoke_detail" />
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="淘宝" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/tian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:text="天猫" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/shang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:text="商超" >
+        </RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/itemInputData"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="openItemID,pid 不填为默认值" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/showPromotions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showPromotions"
+        android:text="打开优惠券" />
+
+    <Button
+        android:id="@+id/showETicketDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showETicketDetail"
+        android:text="@string/open_eticket" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemInputData2"
+        android:onClick="showShopPageByNative"
+        android:text="店铺Native打开" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemInputData2"
+        android:onClick="showShopPageByH5"
+        android:text="店铺H5打开" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#ff212323"
+        android:padding="4dp" >
+
+        <AutoCompleteTextView
+            android:id="@+id/itemInputData2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="itemID" />
+
+        <TextView
+            android:id="@+id/text_showItemDetailV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignTop="@+id/itemInputData2"
+            android:text="商品ID(不混淆):"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <AutoCompleteTextView
+            android:id="@+id/itemTypeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_showItemDetailV2"
+            android:layout_marginRight="14dp"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:visibility="gone"
+            android:hint="itemType" />
+
+        <Button
+            android:id="@+id/showTaokeItemDetailV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/itemInputData2"
+            android:onClick="showTaokeItemDetailV2"
+            android:text="淘客商品详情" />
+
+        <Button
+            android:id="@+id/showItemDetailV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemInputData2"
+            android:layout_toRightOf="@+id/text_showItemDetailV2"
+            android:onClick="showItemDetailV2"
+            android:text="商品详情" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/defaultH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="onItemPageTypeRadioButtonClicked"
+            android:text="@string/defaultH5Page" />
+
+        <RadioButton
+            android:id="@+id/shareH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onItemPageTypeRadioButtonClicked"
+            android:text="@string/shareH5Page" />
+
+        <RadioButton
+            android:id="@+id/taobaoH5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onItemPageTypeRadioButtonClicked"
+            android:text="@string/taobaoH5Page" />
+        
+        <RadioButton
+            android:id="@+id/taobaoNative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onItemPageTypeRadioButtonClicked"
+            android:text="@string/taobaoNativePage" />
+    </RadioGroup>
+
+</LinearLayout>

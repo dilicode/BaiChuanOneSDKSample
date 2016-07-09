@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <!--  -->
+ 	<EditText
+        android:id="@+id/orderInputData"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="输入订单参数，0全部，1待付款，2待发货，3待收货，4待评价" >
+    </EditText>
+     
+    <Button
+        android:id="@+id/show_my_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showMyOrder"
+        android:text="@string/show_my_order" />
+
+    
+    <Button
+        android:id="@+id/show_my_card_couponse"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showMyCardCouponse"
+        android:text="@string/show_my_card_couponse" />
+</LinearLayout>

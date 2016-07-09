@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ <!--  -->
+    <Button
+        android:id="@+id/showCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showCart"
+        android:text="@string/showCart" />
+
+    <Button
+    android:id="@+id/addItem2Cart"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:onClick="addItem2Cart"
+    android:text="@string/addItem2Cart" />
+
+    <Button
+        android:id="@+id/addTaoKeItem2Cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addTaoKeItem2Cart"
+        android:text="@string/addTaoKeItem2Cart" />
+
+    <RadioGroup
+        android:id="@+id/type"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tao_bao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="淘宝" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/tian_mao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:text="天猫" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/shang_chao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:text="商超" >
+        </RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/cartInputData"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:ems="10"
+            android:hint="openItemId,pid,unionId,subPid"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

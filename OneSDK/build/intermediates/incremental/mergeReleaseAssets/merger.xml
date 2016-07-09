@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/src/main/assets"/><source path="/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/Users/LiDili/work/baichuan/BaiChuanSample/OneSDK/src/release/assets"/></dataSet></merger>
